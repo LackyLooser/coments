@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="comments">
+        <div class="comments-group">
+            <h2 class="title">Коментарии:</h2>
+            <ul class="commets-list" id="commets-list">
+                <li class="comments-item">
+                    <div class="comments-item__header">
+                        <p>
+                            <span class="comments-item__name">имя</span>
+                            <span class="comments-item__date">дата</span>
+                        </p>
+                        
+                        <p class="comments-item__delete">удалить</p>
+                    </div>
+                </li>
+            </ul>
+            <form action="" class="comment-form" id="comment-add">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="comment-name">Имя:</label>
+                        <input type="name" class="form__item validate" id="comment-name"  placeholder="Введите Ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="comment-date">Дата:</label>
+                        <input type="date" class="form__item" id="comment-date"></input>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="comment-body">Коментарий:</label>
+                    <textarea type="text" class="form__item form__item-textarea validate" id="comment-body" placeholder="Коментарий"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit"  class="comment-submit">Добавить</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/e568f945ce.js" crossorigin="anonymous"></script>
+    <script src="js.js"></script>
+</body>
+</html>
